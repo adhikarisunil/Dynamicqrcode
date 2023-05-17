@@ -7,4 +7,4 @@ from .models import Dynamicqrcode
 class DynamicqrcodeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Dynamicqrcode
-        fields =("url", "id", "name", "type", "content", "start_date", "end_date", "is_active")
+        fields =("url", "id", "name", "qr_code_type", "content", "start_date", "end_date", "is_active")

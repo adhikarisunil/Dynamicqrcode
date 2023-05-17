@@ -28,11 +28,8 @@ class Dynamicqrcode(models.Model):
     #     return self.book_choice in {self.ENGLISH, self.NEPALI}
 
 
-    type = Choices('English', 'Nepali')
-    # ...
-    another_field = StatusField(choices_name='type')
-
-    
+    QR_CODE_TYPE = Choices('English', 'Nepali')
+    qr_code_type = StatusField(choices_name='QR_CODE_TYPE')
     content = models.JSONField(max_length=255)
     start_date = models.DateTimeField(auto_now_add=True)
     end_date = models.DateTimeField(auto_now_add=True)

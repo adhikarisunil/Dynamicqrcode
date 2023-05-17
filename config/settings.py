@@ -37,11 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dynamicqrcode',
+    # 'dynamicqrcode',
     'rest_framework',
-    "apis.apps.ApisConfig",
+    # 'apis',
     "dynamicqrcode.apps.DynamicqrcodeConfig",
-    'apis',
+    "apis.apps.ApisConfig",
 ]
 
 MIDDLEWARE = [
