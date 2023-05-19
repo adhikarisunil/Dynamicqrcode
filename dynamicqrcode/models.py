@@ -6,9 +6,6 @@ from model_utils import Choices
 # Create your models here.
 
 class Dynamicqrcode(models.Model):
-    
-
-
     name = models.CharField(max_length=255)
     QR_CODE_TYPE = Choices('English', 'Nepali')
     qr_code_type = StatusField(choices_name='QR_CODE_TYPE')

@@ -3,6 +3,6 @@ from .views import DynamicqrcodeListView
 from .views import DynamicqrcodeAPIView
 
 urlpatterns = [
-    path("", DynamicqrcodeListView.as_view(), name="home"),
-    path("", DynamicqrcodeAPIView.as_view(), name="dynamicqrcode_list"),
+    path("api/", DynamicqrcodeListView.as_view(), name="home"),
+    path("api/", DynamicqrcodeAPIView.as_view(), name="dynamicqrcode_list"),
 ]
